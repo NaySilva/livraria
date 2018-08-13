@@ -1,6 +1,6 @@
 package livraria;
 
-public class LivroFisico extends Livro {
+public class LivroFisico extends Livro implements Promocional {
 	
 	public LivroFisico(Autor autor) {
 		super(autor);
@@ -10,6 +10,7 @@ public class LivroFisico extends Livro {
 		return this.getValor() * 0.05;
 	}
 	
+	@Override
 	public boolean aplicaDescontoDe(double porcentagem) {
 		if (porcentagem > 0.3) {
 			return false;
