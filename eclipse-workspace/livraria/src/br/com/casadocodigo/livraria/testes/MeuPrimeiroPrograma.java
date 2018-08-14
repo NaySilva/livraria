@@ -1,4 +1,4 @@
-package livraria;
+package br.com.casadocodigo.livraria.testes;
 
 public class MeuPrimeiroPrograma {
 

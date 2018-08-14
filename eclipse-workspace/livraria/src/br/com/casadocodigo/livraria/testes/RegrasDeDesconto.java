@@ -1,4 +1,6 @@
-package livraria;
+package br.com.casadocodigo.livraria.testes;
+
+import br.com.casadocodigo.livraria.Autor;
 
 public class RegrasDeDesconto {
 	
