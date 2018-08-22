@@ -28,5 +28,10 @@ public class Ebook extends Livro implements Promocional {
 		return true;
 	}
 	
+	@Override
+	public int compareTo(Produto outro) {
+		return Double.compare(this.getValor(),outro.getValor());
+	}
+	
 	
 }

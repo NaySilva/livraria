@@ -41,6 +41,16 @@ public abstract class Livro implements Produto {
 		return this.autor != null;
 	}
 
+	@Override
+	public int compareTo(Produto outro) {
+		if (this.getValor() < outro.getValor()) {
+			return -1;
+		}
+		if (this.getValor() > outro.getValor()){
+			return 1;
+		}
+		return 0;
+	}
 
 	public String getNome() {
 		return nome;
@@ -91,5 +101,17 @@ public abstract class Livro implements Produto {
 		this.autor = autor;
 	}
 	
+	public String toString() {
+		System.out.println("Nome: "+nome);
+		System.out.println("Descrição: "+descricao);
+		System.out.println("Valor: "+valor);
+		System.out.println("ISBN: "+isbn);
+		
+		if (this.temAutor()) {
+			autor.toString();
+		}
+		System.out.println("--");
+		return "";
+	}
 	
 }

@@ -44,6 +44,11 @@ public class Autor {
 		this.cpf = cpf;
 	}
 	
+	@Override
+	public String toString() {
+		return "Isto é um Autor!";
+	}
+	
 	
 
 }
